@@ -27,5 +27,11 @@
     <ClCompile Include="2579.cpp">
       <Filter>소스 파일\다이나믹</Filter>
     </ClCompile>
+    <ClCompile Include="1003.cpp">
+      <Filter>소스 파일\다이나믹</Filter>
+    </ClCompile>
+    <ClCompile Include="11726.cpp">
+      <Filter>소스 파일\다이나믹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
