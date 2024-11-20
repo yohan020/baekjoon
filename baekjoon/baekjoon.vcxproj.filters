@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\다이나믹">
       <UniqueIdentifier>{012974e2-8cd1-4da5-8d27-bd3105b33da1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\기타">
+      <UniqueIdentifier>{c2f4d088-ea75-4853-aa81-6bcb98d01fd0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1463.cpp">
@@ -41,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="1149.cpp">
       <Filter>소스 파일\다이나믹</Filter>
+    </ClCompile>
+    <ClCompile Include="1012.cpp">
+      <Filter>소스 파일\기타</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
