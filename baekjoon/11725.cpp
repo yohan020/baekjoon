@@ -1,56 +1,37 @@
 #include <iostream>
-#include <cmath>
-using namespace std;
-int N, max_node;
-int* tree;
-void add_edge(int n1, int n2) {
-	for (int i = 0; i < max_node; i++) {
-		if (tree[i] == n1) {
-			if (tree[i * 2 + 1] == 0) {
-				tree[i * 2 + 1] = n2;
-				break;
-			}
-			else if (tree[i * 2 + 2] == 0) {
-				tree[i * 2 + 2] = n2;
-				break;
-			}
-		}
-		else if (tree[i] == n2) {
-			if (tree[i * 2 + 1] == 0) {
-				tree[i * 2 + 1] = n1;
-				break;
-			}
-			else if (tree[i * 2 + 2] == 0) {
-				tree[i * 2 + 2] = n1;
-				break;
-			}
-		}
-	}
-}
+#include <vector>
 
-int find_parent(int n) {
-	for (int i = 0; i < max_node; i++) {
-		if (tree[i] == n) {
-			return tree[(i - 1) / 2];
+using namespace std;
+#define MAX 100001
+
+int N;
+int arr[MAX];
+bool visited[MAX];
+vector<int> v[MAX];
+
+void dfs(int k) {
+	visited[k] = true;
+	for (int i = 0; i < v[k].size(); i++) {
+		int next = v[k][i];
+		if (!visited[next]) {
+			arr[next] = k;
+			dfs(next);
 		}
 	}
 }
 
 int main() {
 	cin >> N;
-
-	max_node = pow(2, N) - 1;
-	tree = new int[max_node];
-	for (int i = 0; i < max_node; i++) {
-		tree[i] = 0;
-	}
-	tree[0] = 1;
-	int n1, n2;
 	for (int i = 0; i < N - 1; i++) {
-		cin >> n1 >> n2;
-		add_edge(n1, n2);
+		int a, b;
+		cin >> a >> b;
+		v[a].push_back(b);
+		v[b].push_back(a);
 	}
+
+	dfs(1);
+
 	for (int i = 2; i <= N; i++) {
-		cout << find_parent(i) << endl;
+		cout << arr[i] << '\n';
 	}
 }
