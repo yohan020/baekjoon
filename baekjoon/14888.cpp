@@ -10,10 +10,10 @@ int min_result = 1000000001;
 int max_result = -1000000001;
 
 void dfs(vector<int>operator_cnt, vector<char> operator_list) {
-	vector<int> temp_operator_cnt = operator_cnt;
+	//vector<int> temp_operator_cnt = operator_cnt;
 	for (int i = 0; i < 4; i++) {
-		if (temp_operator_cnt[i] > 0) {
-			temp_operator_cnt[i]--;
+		if (operator_cnt[i] > 0) {
+			operator_cnt[i]--;
 			switch (i) {
 			case 0:
 				operator_list.push_back('+');
@@ -50,9 +50,9 @@ void dfs(vector<int>operator_cnt, vector<char> operator_list) {
 				max_result = max(max_result, result);
 				return;
 			}
-			dfs(temp_operator_cnt, operator_list);
+			dfs(operator_cnt, operator_list);
 			operator_list.pop_back();
-			temp_operator_cnt[i]++;
+			operator_cnt[i]++;
 		}
 
 	}
