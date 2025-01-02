@@ -13,64 +13,73 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\2024년">
+      <UniqueIdentifier>{07664e93-40d3-4129-a19d-86bdab63888f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2025.01">
+      <UniqueIdentifier>{171ad499-0828-41cd-a88e-1f958a88d919}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1080.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1138.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1254.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1347.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1697.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="18870.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="1003.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1149.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1463.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2579.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2775.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9095.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11726.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11727.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\2024년</Filter>
     </ClCompile>
     <ClCompile Include="1012.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\2024년</Filter>
     </ClCompile>
-    <ClCompile Include="11725.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="1080.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="1138.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="1149.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="1254.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="1347.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="1463.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="1697.cpp">
+      <Filter>소스 파일\2024년</Filter>
     </ClCompile>
     <ClCompile Include="1932.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2156.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\2024년</Filter>
     </ClCompile>
     <ClCompile Include="1946.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="2156.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="2579.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="2775.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="9095.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="11725.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="11726.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="11727.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="18870.cpp">
+      <Filter>소스 파일\2024년</Filter>
+    </ClCompile>
+    <ClCompile Include="14888.cpp">
+      <Filter>소스 파일\2025.01</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
