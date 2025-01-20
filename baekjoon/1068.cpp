@@ -1,18 +1,26 @@
 #include <iostream>
 #include <vector>
-
+#include <algorithm>
+#define MAX 51
 using namespace std;
 
-vector<vector<int>>tree;
-vector<int> parent;
-int N, target, cnt;
-
+vector<int>tree[MAX];
+vector<int>parent;
+int N, target, cnt = 0;
+void dfs(int node) {
+	if (node == target) return;
+	if (tree[node].empty() || (find(tree[node].begin(), tree[node].end(), target) != tree[node].end() && tree[node].size() == 1)) {
+		cnt += 1;
+		return;
+	}
+	for (auto n : tree[node]) {
+		dfs(n);
+	}
+}
 int main() {
 	cin >> N;
-	tree.resize(N);
+
 	parent.assign(N, -1);
-
-
 	for (int i = 0; i < N; i++) {
 		cin >> parent[i];
 		if (parent[i] != -1) tree[parent[i]].push_back(i);
@@ -20,24 +28,9 @@ int main() {
 
 	cin >> target;
 
-	delete_dfs(target);
-
-	cnt = 0;
 	for (int i = 0; i < N; i++) {
-		if (i == target || tree[i].empty() && parent[i] == target) continue;
-		if (isleaf(i)) {
-			cnt++;
-		}
+		if (parent[i] == -1) dfs(i);
 	}
-	int i = 0;
-	for (auto t : tree) {
-		cout << i++ << " | ";
-		for (int i = 0; i < t.size(); i++) {
-			cout << t[i] << " ";
-		}
-		cout << endl;
-	}
-
+	
 	cout << cnt;
-
 }
