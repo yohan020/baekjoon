@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <cmath>
+
 using namespace std;
 
 int len; // 숫자 길이
@@ -25,14 +25,15 @@ void check() {
 	string b = ""; // 뒤 자리수를 추출한 수
 	for (int i = 0; i < len / 2; i++) {
 		a += n_str[len / 2 - (1 + i)];
-		b += n_str[len / 2 + i];
-		//a += pow(10, i) * (n_str[i] - '0');
-		//b += pow(10, i) * (n_str[len - (i+1)] - '0');
-		
+		if (len % 2 == 0) {
+			b += n_str[len / 2 + i];
+		}
+		else {
+			b += n_str[len / 2 + i + 1];
+		}
 	}
-	// cout << a << endl << b << endl;
 	if (a == b) { // 1더한 값이 펠린드롬일 경우
-		cout << n_str << endl;
+		cout << n_str;
 		return;
 	}
 
@@ -60,12 +61,12 @@ int main() {
 	cin >> n_str;
 	int idx = n_str.length();
 	
-	while (idx >= 1) {
+	while (idx >= 1) { // 1을 더할 때 반올림 될 경우
 		if (n_str[idx - 1] != '9') break;
 		n_str[idx - 1] = '0';
 		idx--;
 	}
-	if (idx == 0) {
+	if (idx == 0) { // 999...9 인 경우
 		len = n_str.length();
 		n_str = '1';
 		for (int i = 0; i < len; i++) {
@@ -74,7 +75,7 @@ int main() {
 		len++;
 	}
 	else {
-		n_str[idx - 1] += 1; // 199같은 숫자를 처리하기 위함
+		n_str[idx - 1] += 1; // X99...9( X != 9) 인 경우
 	}
 	
 	len = n_str.length();
