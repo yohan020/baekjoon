@@ -16,7 +16,6 @@ int main() {
     coins.assign(n, 0);
     for (int i = 0; i < n; i++) cin >> coins[i];
 
-    dp[0] = 0;
     for (int i = 1; i < coins[0]; i++) {
         dp[i] = -1;
     }
