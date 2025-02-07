@@ -36,5 +36,5 @@ int main() {
             dp[i] = -1;
         }
     }
-    cout << endl << dp[k];
+    cout << dp[k];
 }
