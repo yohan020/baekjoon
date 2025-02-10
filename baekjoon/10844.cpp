@@ -9,7 +9,7 @@ int main() {
 
     int N;
     int result = 0;
-    int dp[101][11] = {0, };
+    long long dp[101][11] = {0, };
     cin >> N;
 
     dp[1][0] = 1;
@@ -24,8 +24,7 @@ int main() {
         }
     }
     for (int i = 1; i < 10; i++) {
-        result %= 1000000000;
-        result += dp[N][i];
+        result = (result + dp[N][i]) % 1000000000;
     }
     cout << result;
 }
