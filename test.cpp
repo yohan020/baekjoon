@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -8,18 +7,16 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int dp[10001] = {0, };
-    int n, k;
-    cin >> n >> k;
+    int DP[201][201] = {0, };
+    int N, K;
+    cin >> N >> K;
 
-    vector <int> coins(n);
-    for (int i = 0; i < n; i++) cin >> coins[i];
-
-    dp[0] = 1;
-    for (int coin: coins) {
-        for (int i = coin; i <=k ;i++) {
-            dp[i] += dp[i-coin];
+    DP[0][0] = 1;
+    for (int i = 1; i <= K; i++) {
+        DP[i][0] = 1;
+        for (int j = 1; j <= N; j++) {
+            DP[i][j] = DP[i-1][j] + DP[i][j-1];
         }
     }
-    cout << dp[k];
+    cout << DP[K][N];
 }
