@@ -15,7 +15,7 @@ int main(void)
     int max_idx = -1;
     cin >> N;
 
-    vector<pair<int, int> > consult(N);
+    vector<pair<int, int>> consult(N);
     vector<int> dp(N+1, 0);
 
     for (int i = 0; i < N; i++) {
