@@ -50,7 +50,8 @@
         "tuple": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "utility": "cpp"
     },
     "BOJ-Tester.defaultLanguage": "cpp"
 }
