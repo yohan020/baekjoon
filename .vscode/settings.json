@@ -53,5 +53,5 @@
         "algorithm": "cpp",
         "utility": "cpp"
     },
-    "BOJ-Tester.defaultLanguage": "cpp"
+    "BOJ-Tester.defaultLanguage": "py"
 }
