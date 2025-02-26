@@ -1,5 +1,3 @@
-import sys
-
 def solve(N):
     dp = [0] * (N + 1)
     prev = [0] * (N + 1)
@@ -19,7 +17,7 @@ def solve(N):
     while N != 0:
         path.append(N)
         N = prev[N]
-    sys.stdout.write(" ".join(map(str, path)))
+    print(" ".join(map(str, path)))
 
 
 N = int(input())
