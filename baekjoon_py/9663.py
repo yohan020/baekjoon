@@ -1,4 +1,3 @@
-
 def dfs(row):
     global result
     if row == N:
@@ -20,7 +19,7 @@ N = int(input())
 result = 0
 
 visited_col = [False] * N
-visited_saseon1 = [False] * (2 * N - 1)
-visited_saseon2 = [False] * (2 * N - 1)
+visited_saseon1 = [False] * (2 * N - 1) # 왼쪽에서 오른쪽 대각선, (3,2) (2,1) / (4,2) (3,1) 행과 열의 차이가 다 같음
+visited_saseon2 = [False] * (2 * N - 1) # 오른쪽에서 왼쪽 대각선, (3,2) (4,1) / (4,2) (3,3) 헹과 열의 합이 다 같음
 dfs(0)
 print(result)
