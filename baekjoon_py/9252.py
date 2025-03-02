@@ -28,7 +28,7 @@ while i > 0 and j > 0:
     else:  # 왼쪽이 더 크거나 같으면 왼쪽으로 이동
         j -= 1
 
-result.reverse()  # 역순이므로 뒤집기
+result.reverse() 
 
 print(dp[l1][l2])
 print("".join(result))
