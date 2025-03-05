@@ -9,7 +9,6 @@ V, E = map(int, input().split())
 start = int(input())
 
 for _ in range(E):
-    flag = True
     u, v, w = map(int, input().split())
     if v in graph[u]: #graph[u]딕셔너리에 v도착노드로된 키가 있는지 확인
         if w < graph[u][v]: #있으면 거리 비교해서 더 짧으면 갱신
