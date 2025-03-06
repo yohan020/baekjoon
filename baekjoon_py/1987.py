@@ -31,6 +31,5 @@ for _ in range(R):
     board.append(input())
 visited.add(board[0][0])
 result = 1
-stack.append((0,0,1))
 DFS()
 print(str(result))
