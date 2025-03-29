@@ -1,7 +1,10 @@
 from collections import deque
+import sys
+
+input = sys.stdin.readline
 
 dir = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-h_dir = [(-2, 1), (-1, 2), (1, 2), (2, 1)]
+h_dir = [(-2, -1), (-2, 1), (-1, -2), (-1, 2), (1, -2), (1, 2), (2, -1), (2, 1)]
 
 K = int(input())
 W, H = map(int, input().split())
