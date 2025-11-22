@@ -53,5 +53,8 @@
         "algorithm": "cpp",
         "utility": "cpp"
     },
-    "BOJ-Tester.defaultLanguage": "py"
+    "BOJ-Tester.defaultLanguage": "py",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": []
 }
