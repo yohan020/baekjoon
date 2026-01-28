@@ -1,0 +1,14 @@
+import sys
+
+input = sys.stdin.readline
+def solve():
+    N = int(input())
+    A = list(map(int, input().split()))
+    for i in range(N - 1):
+        S, T = map(int, input().split())
+        A[i + 1] += (A[i] // S) * T
+        A[i] %= S
+    print(A[-1])
+
+if __name__ == "__main__":
+    solve()
